@@ -4,6 +4,8 @@ import { assets, blog_data } from '@/Assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { useState, useEffect } from 'react'
+import Footer from '@/components/footer'
+import Link from 'next/link'
 
 const page = ({params}) => {
     const [data, setData] = useState(null)
@@ -13,8 +15,8 @@ const page = ({params}) => {
         {
             if (Number(params.id)===blog_data[i].id){
 
-                setData(blog_data[1])
-                console.log(blog_data[1]);
+                setData(blog_data[i])
+                console.log(blog_data[i]);
                 
                 break
         }
@@ -30,7 +32,9 @@ const page = ({params}) => {
   return (data? <>
     <div className=' bg-gray-200 py-5 px-5 md:px-12 lg:px28'>
         <div className=' flex justify-between items-center'>
+            <Link src={assets.backward} href='/'>
             <Image src={assets.blogger} width={180} alt='' className=' w-[-130px] sm:w-auto'/> 
+            </Link>
             <button className=' flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-black shadow-[-7px_7px_0px_#000000]'>Get Started</button>
         </div>
         <div className=' text-center my-24 '>
@@ -56,7 +60,17 @@ const page = ({params}) => {
         <h3 className=' my-5 text-[-18px] font-semibold'>Conclusion: Self reflection and goal setting</h3>
         <p className=' my-3'>kiiiiiiiiiii</p>
         <p className=' my-3'>kiiiiiiiiiii</p>
+        <div className=' my-24'>
+        <p className='text-black font-semibold my-4'>Share this articles on social medium</p>
+   
+   <div className='flex'>
+    <Image src={assets.fbk} width={50} alt=''/>
+    <Image src={assets.twitter} width={50} alt=''/>
+    <Image src={assets.ig} width={50} alt=''/>
+   </div>
+   </div>
     </div>
+    <Footer/>
     </>:<></>
   )
 }
