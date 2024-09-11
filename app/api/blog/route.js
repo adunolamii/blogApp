@@ -11,11 +11,16 @@ const loadDB = async()=>{
 }
 loadDB()
 
-// TESTING APIS USING GET REQUEST
+// TESTING APIS USING GET ALL REQUEST
 export async function GET (request){
-  return NextResponse.json({msg: "testing APi"})
+  const blogs = await BlogModel.find({})
+  return NextResponse.json({blogs})
 }
-// TESTING APIS USING POST REQUEST TO IMAGES IN PUBLIC FOLDER WITH VAR NAME OF "image in line 22"
+// API ENDPOINT FOR UPLOADING BLOGS
+
+
+
+// TESTING APIS USING POST REQUEST OF STORING IMAGES IN PUBLIC FOLDER WITH VAR NAME OF "image in line 22"
 export async function POST (request){
   const formData = await request.formData()
   const timestamp = Date.now()
@@ -27,13 +32,16 @@ export async function POST (request){
   await writeFile(path,buffer)
   const imgUrl = `/${timestamp}_${image.name}`
   // console.log("imgUrl");
+  // return NextResponse.json({imgUrl})for image testing
 
+  // TESTING APIS USING GET REQUEST OF STORING DATA AND IMAGES DATABASE WITH VAR NAME OF "image in line 22"
+// THIS WILL REFLECT AT THE CLIENT SIDE
   const blogData = {
     title: `${formData.get('title')}`,
     description:`${formData.get('description')}`,
     category: `${formData.get('category')}`,
     author: `${formData.get('author')}`,
-    image: `${formData.get('imgUrl')}`,
+    image: `${imgUrl.get}`,
     authorImg: `${formData.get('authorImg')}`,
   }
   await BlogModel.create(blogData);
@@ -41,6 +49,5 @@ export async function POST (request){
   return NextResponse.json({success:true, msg:"blog added"})
   
   
-  // return NextResponse.json({imgUrl}) for image testing
   
 }

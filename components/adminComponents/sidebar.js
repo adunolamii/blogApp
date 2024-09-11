@@ -16,7 +16,7 @@ const sidebar = () => {
             href="/admin/addProducts"
             className=" flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]"
           >
-            <Image src={assets.fbk} alt=" " width={28} />
+            <Image src={assets.add} alt=" " width={28} />
             <p>Add Blog</p>
           </Link>
 
@@ -24,14 +24,14 @@ const sidebar = () => {
             href="/admin/blogLists"
             className="mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]"
           >
-            <Image src={assets.fbk} alt=" " width={28} />
+            <Image src={assets.add} alt=" " width={28} />
             <p>Blog Lists</p>
           </Link>
           <Link
             href="/admin/subscriptions"
             className="mt-5 flex items-center border border-black gap-3 font-medium px-3 py-2 bg-white shadow-[-5px_5px_0px_#000000]"
           >
-            <Image src={assets.fbk} alt=" " width={28} />
+            <Image src={assets.add} alt=" " width={28} />
             <p>Subscription</p>
           </Link>
         </div>

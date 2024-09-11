@@ -3,6 +3,8 @@ import blogger from "./blogger.png"
 import fbk from "./fbk gg.png"
 import ig from "./ig.jpg"
 import twitter from "./twitter.jpg"
+import add from "./add.png"
+import thumbnail from "./upload.jpg"
 import forward from "./fwarrow.png"
 import backward from "./bkarrow.png"
 import authorImage from "./authorImage.jpg"
@@ -28,6 +30,8 @@ export const assets = {
     backward,
     blogger,
     fbk,
+    add,
+    thumbnail,
     ig,
     twitter,
     lifestyle1,

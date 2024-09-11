@@ -6,21 +6,32 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Footer from '@/components/footer'
 import Link from 'next/link'
+import axios from 'axios'
 
 const page = ({params}) => {
     const [data, setData] = useState(null)
-   
-    const fetchBlogData = ()=>{
-        for(let i=0; i<blog_data.length; i++)
-        {
-            if (Number(params.id)===blog_data[i].id){
+//    FOR CLIENT SIDE
+    // const fetchBlogData = ()=>{
+    //     for(let i=0; i<blog_data.length; i++)
+    //     {
+    //         if (Number(params.id)===blog_data[i].id){
 
-                setData(blog_data[i])
-                console.log(blog_data[i]);
+    //             setData(blog_data[i])
+    //             console.log(blog_data[i]);
                 
-                break
-        }
-    }
+    //             break
+    //     }
+    // }
+    // }
+
+    // FOR BACKEND
+    const fetchBlogData = async()=>{
+        const response = await axios.get("/api/blog", {
+            params:{
+                id:params.id
+            }
+        })
+        setData(response.data);
     }
 
     useEffect(() => {
@@ -39,7 +50,7 @@ const page = ({params}) => {
         </div>
         <div className=' text-center my-24 '>
             <h1 className='text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto'>{data.title}</h1>
-            <Image/>
+            <Image src={data.authorImg} width={60} height={60} alt=''/>
             <p className=' mt-1 pb-2 text-lg max-w-[740px] mx-auto'>{data.author}</p>
         </div>
     </div>
