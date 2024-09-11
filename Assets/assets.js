@@ -50,162 +50,162 @@ export const assets = {
 
     export const blog_data = [{
         id:1,
-        title:"A detailed step by step guide to manage your lifestyle",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Time management is about life management.",
+        description:"It is health that is real wealth and not pieces of gold and silver.",
         image:lifestyle4,
         date:Date.now(),
         category:"Lifestyle",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adunola Adenike",
+        author_img:authorImage
     },
     {
         id:2,
-        title:"How to create an effective startup roadmap or ideas",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Chase the vision, not the money, the money will end up following you.",
+        description:"Any time is a good time to start a company...",
         image:start4,
         date:Date.now(),
         category:"Startup",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Taiwo Adunola",
+        author_img:authorImage
     },
     {
         id:3,
-        title:"Learning new technology to boost your career in software",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Learning new technology to boost your career in software.",
+        description:" I hope these technology quotes remind you and your team to stay grounded...",
         image:tech4,
         date:Date.now(),
         category:"Technology",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adunola Tee",
+        author_img:authorImage
     },
     {
         id:4,
-        title:"Tips for getting the most out of apps and software",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Tips for getting the most out of apps and software.",
+        description:"Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important...",
         image:tech3,
         date:Date.now(),
         category:"Technology",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Ade Adunola",
+        author_img:authorImage
     },
     {
         id:5,
-        title:"Enhancing your skills and capturing memorable moments",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Fall in love with taking care of your body.",
+        description:"Your health account, your bank account, they’re the same thing. The more you put in, the more you can take out.",
         image:lifestyle3,
         date:Date.now(),
         category:"Lifestyle",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adunola Adenike",
+        author_img:authorImage
     },
     {
         id:6,
-        title:"Maximizing returns by minimizing resources in your startup",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"High expectations are the key to everything.",
+        description:"If you are not embarrassed by the first version of your product, you’ve launched too late...",
         image:start2,
         date:Date.now(),
         category:"Startup",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adenike Adunola",
+        author_img:authorImage
     },
     {
         id:7,
-        title:"Technology for Career advancement in development",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Technology for Career advancement in development.",
+        description:"Our business is about technology, yes. But it’s also about operations and customer relationships...",
         image:tech2,
         date:Date.now(),
         category:"Technology",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adenike Taiwo",
+        author_img:authorImage
     },
     {
         id:8,
-        title:"A comprehensive roadmap for effective lifestyle management",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Healthy self = Heal thy self.",
+        description:"Most people have no idea how good their body is designed to feel...",
         image:lifestyle1,
         date:Date.now(),
         category:"Lifestyle",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Taiwo Adenike",
+        author_img:authorImage
     },
     {
         id:9,
-        title:"Achieving maximum returns with minimal resources",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"The secret of getting ahead is getting started.",
+        description:"“There’s lots of bad reasons to start a company. But there’s only one good, legitimate reason, and I think you know...",
         image:start2,
         date:Date.now(),
         category:"Startup",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adunola Taiwo",
+        author_img:authorImage
     },
     {
         id:10,
-        title:"Beyond the Ordinary: Crafting Your Exceptional Lifestyle",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Beyond the Ordinary: Crafting Your Exceptional Lifestyle.",
+        description:"Darling, when things go wrong in life, you lift your chin, put on a ravishing smile, mix yourself a little cocktail.....",
         image:lifestyle1,
         date:Date.now(),
         category:"Lifestyle",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adunola Ade",
+        author_img:authorImage
     },
     {
         id:11,
-        title:"Unveiling the Secrets of Successful Startups in Technolgy",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"The secret to successful hiring.",
+        description:"“Don’t wait for perfection. Life isn’t perfect. Do the best you can and ship. Real people ship, and then they test and then they ship again...",
         image:start2,
         date:Date.now(),
         category:"Startup",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adenike Adunola",
+        author_img:authorImage
     },
     {
         id:12,
-        title:"How to design an online Learning Platform today",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"From new apps to updates, to the next big craze.",
+        description:"All silliness aside, embracing technology isn’t always easy...",
         image:tech3,
         date:Date.now(),
         category:"Technology",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Taiwo Adenike",
+        author_img:authorImage
     },
     {
         id:13,
-        title:"Tomorrow's Algorithms: Shaping the Landscape of Future AI",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Tomorrow's Algorithms: Shaping the Landscape of Future AI.",
+        description:"Find a purpose to serve, not a lifestyle to live...",
         image:start1,
         date:Date.now(),
         category:"Startup",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adenike Adunola",
+        author_img:authorImage
     },
     {
         id:14,
-        title:"Balance & Bliss: Navigating Life's Journey with Style",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Find a purpose to serve, not a lifestyle to live.",
+        description:"They get up early, because they have so much to do, and go to bed early, because they have so little to think about...",
         image:lifestyle4,
         date:Date.now(),
         category:"Lifestyle",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adenike Taiwo",
+        author_img:authorImage
     },
     {
         id:15,
-        title:"Exploring the Evolution of social networking in the Future",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"What new technology does is create new opportunities to do a job that customers want done.",
+        description:"Technology like art is a soaring exercise of the human imagination...",
         image:tech2,
         date:Date.now(),
         category:"Technology",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Adenike Tee",
+        author_img:authorImage
     },
     {
         id:16,
-        title:"Shaping the Future of statup ecosystem in the world",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
+        title:"Shaping the Future of statup ecosystem in the world.",
+        description:"Most people have no idea how good their body is designed to feel...",
         image:start1,
         date:Date.now(),
         category:"Startup",
-        author:"Alex Bennett",
-        // author_img:profile_icon
+        author:"Taiwo Adenike",
+        author_img:authorImage
     },
 ]

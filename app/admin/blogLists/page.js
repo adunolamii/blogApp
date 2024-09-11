@@ -10,7 +10,7 @@ const page = () => {
   const [blogs, setBlogs] = useState([])
 
   const fetchBlogs = async ()=>{
-    const response = await axios.get("/api/blogs")
+   const response = await axios.get("/api/blog")
     setBlogs(response.data.blogs)
   }
   useEffect(() => {
@@ -39,8 +39,9 @@ const page = () => {
           </tr>
         </thead>
           <tbody>
+
             {blogs.map((item, index)=>{
-                return <BlogTableItems key={index} mongoId={item._id} title={item.title} author={item.author} authorImg={item.authorImg} data={item.data}/>
+                return <BlogTableItems key={index} mongoId={item._id} title={item.title} author={item.author} authorImg={item.authorImg} data={item.date}/>
             })}
             
           </tbody>

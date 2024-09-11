@@ -1,9 +1,9 @@
-import { blog_data } from '@/Assets/assets'
+import { assets, blog_data } from '@/Assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 
-
+// FOR DISPLAYING ALL CARDS IN ASSETS FILE
 const blogItem = ({title, description, category, image, id}) => {
   return (
     <div className=' max-w-[-330px] sm:max-w-[300px] bg-white border border-black hover:shadow-[-7px_7px_0px_#000000]'>
@@ -17,7 +17,7 @@ const blogItem = ({title, description, category, image, id}) => {
    <div className=' inline-flex items-center py-2 font-semibold text-center'>
     
     <Link href={`/blogs/${id}`}>
-    Read more <Image alt='' width={12} className=' ml-2'/>
+    Read more <Image src={assets.forward} alt='' width={12} className=' ml-2'/>
     </Link>
    </div>
    <div>

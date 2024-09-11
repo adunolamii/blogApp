@@ -20,14 +20,13 @@ const header = () => {
       <div className="text-center my-8">
         <h1 className=" text-3xl sm:text-5xl font-medium">Latest Blogs</h1>
         <p className=" mt-10 max-4-[-740] m-auto">
-          Lorem Ipsum is simple dummy text of the printing and type setting
-          industry Lorem has been the industry standard dummy next ever.
+        The blog app is your communication tool when publishing editorial content using different layout options, widget combinations, teaser text, or teaser images. You can publish articles pre-dated or back-dated, and even a release process is possible.
         </p>
         <form className=" flex justify-between max-w-[500px] scale-75px sm:scale-100 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#000000]">
           <input
             type="email"
             placeholder="Enter your email"
-            className="pl-4 outline"
+            className="pl-4 outline-none"
           />
           <button
             type="submit"
