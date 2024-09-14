@@ -17,8 +17,9 @@ export default function Layout({children}){
                 <h3 className=" font-medium">Admin Panel</h3>
                 <Image src={ assets.authorImage} width={40} alt=""/>
                 </div>
+           {children}
             </div>
-            {children}
+            
         </div>
         
         </>

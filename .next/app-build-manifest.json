@@ -11,10 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/admin/subscriptions/page": [
+    "/admin/blogLists/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/subscriptions/page.js"
+      "static/chunks/app/admin/blogLists/page.js"
     ],
     "/admin/layout": [
       "static/chunks/webpack.js",
@@ -22,26 +22,21 @@
       "static/css/app/admin/layout.css",
       "static/chunks/app/admin/layout.js"
     ],
+    "/admin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/page.js"
+    ],
     "/admin/addProducts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/admin/addProducts/page.css",
       "static/chunks/app/admin/addProducts/page.js"
     ],
-    "/admin/blogLists/page": [
+    "/admin/subscriptions/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/blogLists/page.js"
-    ],
-    "/blogs/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blogs/[id]/page.js"
-    ],
-    "/admin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/admin/page.js"
+      "static/chunks/app/admin/subscriptions/page.js"
     ]
   }
 }

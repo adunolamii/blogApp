@@ -73,7 +73,8 @@ import 'react-toastify/dist/ReactToastify.css';
           <option value="Technology">Technolgy</option>
           <option value="Lifestyle">Lifestyle</option>
         </select>
-        <button className=' mt8 w-40 h-12 bg-black text-white' type=' submit'>Add</button>
+        <br/>
+        <button className=' mt-8 w-40 h-12 bg-black text-white' type=' submit'>ADD</button>
     </form>
 
     </>
