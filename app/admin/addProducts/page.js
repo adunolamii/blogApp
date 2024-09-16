@@ -41,14 +41,14 @@ import 'react-toastify/dist/ReactToastify.css';
         toast.success(response.data.msg)
        
         // TO RESET AFTER POSTING
-        // setImage(false)
-        // setData({
-        //   title:"",
-        //   description:"",
-        //   category:"startup",
-        //   author:"Ade",
-        //   authorImg:"/aut.jpg"
-        // })
+        setImage(false)
+        setData({
+          title:"",
+          description:"",
+          category:"startup",
+          author:"Ade",
+          authorImg:"/aut.jpg"
+        })
     }
     else{
       toast.error("error")

@@ -8,6 +8,7 @@ import thumbnail from "./upload.jpg"
 import forward from "./fwarrow.png"
 import backward from "./bkarrow.png"
 import authorImage from "./authorImage.jpg"
+import myPic from "./pic.jpg"
 import lifestyle1  from "./images.jpg" 
 import lifestyle2  from "./images1.jpg" 
 import lifestyle3  from "./lifestyle3.jpg"
@@ -26,6 +27,7 @@ import tech4  from "./tech4.jpg"
 
 export const assets = {
     authorImage,
+    myPic,
     forward,
     backward,
     blogger,
@@ -56,7 +58,8 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Adunola Adenike",
-        author_img:authorImage
+        // author_img:authorImage,
+        author_img:myPic
     },
     {
         id:2,
@@ -66,7 +69,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Taiwo Adunola",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:3,
@@ -76,7 +79,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Adunola Tee",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:4,
@@ -86,7 +89,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Ade Adunola",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:5,
@@ -96,7 +99,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Adunola Adenike",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:6,
@@ -106,7 +109,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Adenike Adunola",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:7,
@@ -116,7 +119,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Adenike Taiwo",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:8,
@@ -126,7 +129,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Taiwo Adenike",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:9,
@@ -136,7 +139,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Adunola Taiwo",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:10,
@@ -146,7 +149,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Adunola Ade",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:11,
@@ -156,7 +159,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Adenike Adunola",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:12,
@@ -166,7 +169,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Taiwo Adenike",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:13,
@@ -176,7 +179,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Adenike Adunola",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:14,
@@ -186,7 +189,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Adenike Taiwo",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:15,
@@ -196,7 +199,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Adenike Tee",
-        author_img:authorImage
+        author_img:myPic
     },
     {
         id:16,
@@ -206,6 +209,6 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Taiwo Adenike",
-        author_img:authorImage
+        author_img:myPic
     },
 ]

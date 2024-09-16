@@ -13,9 +13,9 @@ export default function Layout({children}){
             <Sidebar/>
 
           <div className="flex flex-col w-full">
-            <div className=" flex items-center justify-between w-full py-3 max-h-[60px] px-12 border-b border-black">
+            <div className=" flex items-center justify-between w-full py-10 max-h-[60px] px-12 border-b border-black">
                 <h3 className=" font-medium">Admin Panel</h3>
-                <Image src={ assets.authorImage} width={40} alt=""/>
+                <Image className=" rounded" src={ assets.myPic}  width={40} alt=""/>
                 </div>
            {children}
             </div>

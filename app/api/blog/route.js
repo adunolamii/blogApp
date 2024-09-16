@@ -2,6 +2,7 @@ import { connectDB } from "@/lib/config/db";
 const { NextResponse } = require("next/server");
 import { writeFile } from "fs/promises";
 import BlogModel from "@/lib/models/blogs.models";
+const fs = require ("fs")
 
 
 // TESTING DB CONNECTION
@@ -45,30 +46,39 @@ export async function POST (request){
 }
 
 // APIS ENDPOINT TO GET ALL REQUEST
-export async function GET (request){
-  const blogs = await BlogModel.find({})
-  return NextResponse.json({blogs})
+// export async function GET (request){
+//   const blogs = await BlogModel.find({})
+//   return NextResponse.json({blogs})
+// }
+
+// APIS ENDPOINT TO GET INDIVIDUAL REQUEST
+
+export async function GET(request){
+  const blogId = request.nextUrl.searchParams.get("id");
+  if(blogId){
+    const blog = await BlogModel.findById(blogId)
+    return NextResponse.json(blog)
+  }
+  else{
+    const blogs = await BlogModel.find({})
+    return NextResponse.json({blogs})
+  }
+
 }
 
-// export async function GET(request){
-//   const blogId = request.nextUrl.searchParams.get("id");
-//   if(blogId){
-//     const blog = await BlogModel.findById(blogId)
-//     return NextResponse.json(blog)
-//   }
-//   else{
-//     const blogs = await BlogModel.find({})
-//     return NextResponse.json({blogs})
-//   }
+// APIS ENDPOINT TO DELETE REQUEST "delete image and datas from the DB"
 
-// }
+export async function DELETE(request){
+  const id = await request.nextUrl.searchParams.get("id")
+  const blog = await BlogModel.findById(id);
+  fs.unlink(`./public${blog.image}`, ()=>{});
+  await BlogModel.findByIdAndDelete(id);
+  return NextResponse.json({msg: "Blog deleted"})
+
+}
 
 
 
 
-  // TESTING APIS USING GET REQUEST OF STORING DATA AND IMAGES DATABASE WITH VAR NAME OF "image in line 22"
-// THIS WILL REFLECT AT THE CLIENT SIDE
+
  
-  
-  
-// }
