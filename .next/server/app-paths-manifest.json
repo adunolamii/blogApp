@@ -3,7 +3,6 @@
   "/page": "app/page.js",
   "/blogs/[id]/page": "app/blogs/[id]/page.js",
   "/api/blog/route": "app/api/blog/route.js",
-  "/api/email/route": "app/api/email/route.js",
   "/admin/addProducts/page": "app/admin/addProducts/page.js",
   "/admin/subscriptions/page": "app/admin/subscriptions/page.js",
   "/admin/blogLists/page": "app/admin/blogLists/page.js"

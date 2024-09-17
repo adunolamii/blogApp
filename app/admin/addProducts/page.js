@@ -47,7 +47,7 @@ import 'react-toastify/dist/ReactToastify.css';
           description:"",
           category:"startup",
           author:"Ade",
-          authorImg:"/aut.jpg"
+          authorImg:"/pic.jpg"
         })
     }
     else{

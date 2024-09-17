@@ -6,9 +6,23 @@ import axios from 'axios'
 
 const page = () => {
   const [emails, setEmails] = useState([])
+  
   const fetchEmails = async ()=>{
     const response = await axios.get("/api/email")
     setEmails(response.data.emails)
+  }
+  
+  const deleteEmail = async (mongoId)=>{
+    const response = await axios.delete("/api/blog", {params:{id:mongoId}})
+    toast.success(response.data.msg);
+    if (response.data.success){
+      toast.success(response.data.msg);
+      setEmails();
+      }
+      else{
+        toast.error("error")
+      }
+    fetchEmails();
   }
   useEffect(() => {
     fetchEmails()
@@ -35,7 +49,9 @@ const page = () => {
         <tbody>
           {
             emails.map((item, index)=>{
-              return <SubsTableItem key={index} mongoId={item.id} email={item.email} date={item.date}/>
+              return <SubsTableItem key={index} mongoId={item.id} email={item.email} date={item.date} deleteEmail={deleteEmail}/>
+
+              
             })
           }
           
