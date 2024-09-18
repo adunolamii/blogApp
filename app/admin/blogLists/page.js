@@ -6,7 +6,7 @@ import axios from 'axios'
 
 
 
-const page = () => {
+function Page  ()  {
   const [blogs, setBlogs] = useState([])
 
   const fetchBlogs = async ()=>{

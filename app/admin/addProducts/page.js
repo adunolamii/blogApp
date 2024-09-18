@@ -9,7 +9,7 @@ import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
- const page = () => {
+ function Page  ()  {
    const [image, setImage] = useState(false);
    const [data, setData] = useState({
     title:"",

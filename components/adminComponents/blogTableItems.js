@@ -7,7 +7,7 @@ const blogTableItems = ({authorImg, title, author, date, deleteBlog, mongoId}) =
   return (
    <tr className=' bg-white border-b'>
     <th scope='row' className=' items-center gap-3 hidden sm:flex px-6 font-medium text-gray-900 whitespace-nowrap'>
-    <Image src={authorImg? authorImg: assets.myPic} width={40} height={40}/>
+    <Image src={authorImg? authorImg: assets.myPic} width={40} height={40} alt=''/>
     <p>{author?author: "no author"}</p>
     </th>
         <td className='px-6 py-4'>

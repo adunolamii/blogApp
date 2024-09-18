@@ -4,7 +4,7 @@ import SubsTableItem from '@/components/adminComponents/subsTableItem'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const page = () => {
+function Page  ()  {
   const [emails, setEmails] = useState([])
   
   const fetchEmails = async ()=>{
