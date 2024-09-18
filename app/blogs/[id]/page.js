@@ -8,7 +8,7 @@ import Footer from '@/components/footer'
 import Link from 'next/link'
 import axios from 'axios'
 
-const page = ({params}) => {
+function Page  ({params})  {
     const [data, setData] = useState(null)
 //    FOR CLIENT SIDE....ASSETS FILE
     // const fetchBlogData = ()=>{
