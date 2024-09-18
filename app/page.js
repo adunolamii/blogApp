@@ -1,6 +1,6 @@
 "use client"
-import Header from "@/components/header";
-import BlogLists from "@/components/blogLists";
+import Header from "@/components/Header";
+import BlogLists from "@/components/BlogLists";
 import Footer from "@/components/footer";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
