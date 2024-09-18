@@ -38,8 +38,8 @@ function Page  ({params})  {
     useEffect(() => {
         fetchBlogData()
     
-     
-    }, [])
+    })
+    // }, [])
     
   return (data? <>
     <div className=' bg-gray-200 py-5 px-5 md:px-12 lg:px28'>
