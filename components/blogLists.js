@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
-function BlogLists  () {
+export default function BlogLists  () {
     const [menu,setMenu] = useState('All')
     const [blogs, setBlogs] = useState([])
 
@@ -46,4 +46,3 @@ function BlogLists  () {
   )
 }
 
-export default BlogLists
