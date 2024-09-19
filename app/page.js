@@ -4,8 +4,8 @@
 import Footer from "@/components/footer";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
-import {Header} from "@/components/Header";
-import {BlogLists} from "@/components/BlogLists";
+import Header from "@/components/Header";
+import BlogLists from "@/components/BlogLists";
 
 
 export default function Home() {

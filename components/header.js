@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { useState } from "react";
 
-export default function Header  () {
+export default function header  () {
   const [email, setEmail] = useState("")
 
   const onSubmitHandler = async (e)=>{
