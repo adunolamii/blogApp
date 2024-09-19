@@ -46,4 +46,4 @@ function BlogLists  () {
   )
 }
 
-export default blogLists
+export default BlogLists
