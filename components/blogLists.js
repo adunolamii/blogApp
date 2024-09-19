@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
-function backlogLists  () {
+function BlogLists  () {
     const [menu,setMenu] = useState('All')
     const [blogs, setBlogs] = useState([])
 
